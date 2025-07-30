@@ -22,6 +22,6 @@ job('my-app-build') {
     }
 
     publishers {
-        archiveArtifacts('target/*.war')  // archive war file for download
+        archiveArtifacts('target/*.jar')  // archive war file for download
     }
 }
