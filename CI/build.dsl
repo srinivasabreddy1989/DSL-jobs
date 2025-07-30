@@ -1,5 +1,5 @@
 job('my-app-build') {
-    description('Builds my app from Git and runs a shell script')
+    description('Builds my  from Git and runs a shell script')
 
     scm {
         git {
