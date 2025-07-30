@@ -2,7 +2,7 @@ job('docker-image-build') {
     description('Builds Docker image from source code')
     
     scm {
-        git('https://github.com/srinivasabreddy1989/DSL-jobs.git', 'main')
+        git('https://github.com/srinivasabreddy1989/DSL-jobs.git', 'master')
     }
 
     triggers {
