@@ -7,7 +7,7 @@ job('my-app-build') {
                 url('https://github.com/srinivasabreddy1989/DSL-jobs.git')
                 
             }
-            branch('main')
+            branch('master')
         }
     }
 
