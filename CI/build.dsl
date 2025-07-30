@@ -11,13 +11,17 @@ job('my-app-build') {
         }
     }
 
-   
-
+    wrappers {
+        preBuildCleanup()  // cleans workspace before build
+    }
     steps {
         shell('''
-            echo "Code pulled from Git!"
-            echo "Now building..."
-            
+            echo "Building Java project using Maven..."
+            mvn clean package
         ''')
+    }
+
+    publishers {
+        archiveArtifacts('target/*.war')  // archive war file for download
     }
 }
