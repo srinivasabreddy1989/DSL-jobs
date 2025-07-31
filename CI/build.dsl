@@ -1,4 +1,4 @@
-job('my-app-build') {
+job('my-app-build-test') {
     description('Builds my app from Git and runs a shell script')
 
     scm {
